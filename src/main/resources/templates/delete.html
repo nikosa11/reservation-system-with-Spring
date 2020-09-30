@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <form action="#" th:action="@{/delete}" th:object="${id}" method="post">
+        <h1>Delete by id</h1>
+    
+           
+           <label for="id">Id</label>
+			<input type="text" id="id" name="id" autofocus="autofocus"/>
+           <br/>
+			<input type="submit" value="Submit"/>
+			
+           
+        </form>
+        <form th:action="@{/}"  method="get">
+		
+		<br/>
+		<input type="submit" value="Return"/>
+	</form>
+    </body>
+    
+</html>

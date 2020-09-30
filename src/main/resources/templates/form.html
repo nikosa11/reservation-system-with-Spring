@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <form action="#" th:action="@{/user}" th:object="${user}" method="post">
+        <h1>Booking  Destination</h1>
+        <h3>Firstname and Lastname lenght must be more than 2 lettering and Email more than 5</h3>
+        <h3>to succeed the submit the age must be more than 17</h3>
+            <table>
+	            <label for="firstname">Firstname</label>
+				<input type="text" id="firstname" name="firstname" autofocus="autofocus"/>
+                <label for="lastname">Lastname</label>
+				<input type="text" id="lastname" name="lastname" autofocus="autofocus"/>
+                <label for="age">Age</label>
+				<input type="text" id="age" name="age" autofocus="autofocus"/>
+                <label for="email">Email</label>
+				<input type="text" id="email" name="email" autofocus="autofocus"/>
+                <label for="destination">Destination</label>
+				<input type="text" id="destination" name="destination" autofocus="autofocus"/>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+                <form th:action="@{/}"  method="get">
+		
+		<br/>
+		<input type="submit" value="Return"/>
+	</form>
+    </body>
+</html>

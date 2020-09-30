@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <form action="#" th:action="@{/search}" th:object="${lastname}" method="post">
+        <h1>Search by Lastname</h1>
+    
+           
+           <label for="lastname">Lastname</label>
+			<input type="text" id="lastname" name="lastname" autofocus="autofocus"/>
+           <br/>
+			<input type="submit" value="Search"/>
+           
+        </form>
+                <form th:action="@{/}"  method="get">
+		
+		<br/>
+		<input type="submit" value="Return"/>
+	</form>
+    </body>
+</html>
